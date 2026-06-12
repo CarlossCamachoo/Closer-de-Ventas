@@ -1,0 +1,33 @@
+{
+  "eval_id": 2,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "distingue_objeciones: Separa la objeción de precio de la objeción de 'necesito pensarlo' y trata ambas",
+      "passed": true,
+      "evidence": "Diagnóstico section explicitly identifies two separate signals: 'Está muy caro' (price objection) and 'lo tengo que pensar' (delay objection), stating '\"Lo tengo que pensar\" en una llamada en vivo es la forma educada de decir: no me has dado suficiente razón para decir sí ahora mismo.' Both are addressed throughout the response with specific handling for each."
+    },
+    {
+      "text": "frases_para_llamada: Provee frases concretas para decir en la llamada en tiempo real",
+      "passed": true,
+      "evidence": "Entire section 'Frases Exactas — Úsalas Ahora Mismo' provides verbatim dialogue including: '¿Qué es específicamente lo que necesitas pensar?', '¿Y si el dinero no fuera el tema, lo harías?', '¿Lo hacemos? Te digo cómo es el primer paso.' — all ready to use on the call."
+    },
+    {
+      "text": "no_descuento_inmediato: No recomienda dar un descuento como primera respuesta",
+      "passed": true,
+      "evidence": "Movimiento 1 explicitly states 'No ofrezcas descuento todavía.' The 'Lo Que NO Debes Hacer' section reiterates 'No ofrezcas descuento de entrada — baja el valor percibido sin resolver el problema real.' Discount is only mentioned later as a last resort if the objection is purely financial."
+    },
+    {
+      "text": "incluye_silencio_o_cierre: Menciona el poder del silencio o incluye una pregunta de cierre al final",
+      "passed": true,
+      "evidence": "Multiple mentions of silence: 'Luego — silencio. No llenes ese espacio.' and '(Silencio. Déjalo responder.)' and 'el primero que habla después del cierre, pierde.' Closing questions include '¿Lo hacemos?' and '¿Qué necesitaría pasar para que digas sí hoy?'"
+    }
+  ],
+  "pass_rate": 1.0,
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  }
+}

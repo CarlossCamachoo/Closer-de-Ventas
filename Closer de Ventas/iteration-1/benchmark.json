@@ -1,0 +1,749 @@
+{
+  "metadata": {
+    "skill_name": "closer-ventas",
+    "skill_path": "/Users/andres/.claude/skills/closer-ventas",
+    "executor_model": "claude-sonnet-4-6",
+    "analyzer_model": "claude-sonnet-4-6",
+    "timestamp": "2026-06-12T20:08:18Z",
+    "evals_run": [
+      1,
+      2,
+      3
+    ],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 58.8,
+        "tokens": 18147,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "identifica_canal_whatsapp: Identifica que el canal es WhatsApp y da consejo específico para ese canal",
+          "passed": true,
+          "evidence": "Specifically advises sending two separate short messages (not one long one), uses pattern interrupt tactic, explicitly references WhatsApp rhythm and momentum"
+        },
+        {
+          "text": "da_mensaje_concreto: Incluye un mensaje o frase exacta que el usuario puede enviar ahora mismo",
+          "passed": true,
+          "evidence": "Provides two exact verbatim messages to send: 'Oye [nombre], te mandé bastante info el otro día — probablemente demasiada de un jalón 😅' and 'Cuéntame una cosa: ¿qué fue lo que te hizo escribirme originalmente?'"
+        },
+        {
+          "text": "no_perseguir: Advierte contra perseguir al cliente o hace el seguimiento estratégico",
+          "passed": true,
+          "evidence": "Explicitly states 'No hagas seguimiento de ¿lo viste?' and explains 'Eso se ve desesperado y te posiciona mal. Nunca digas solo quería saber si tuviste chance de leerlo'"
+        },
+        {
+          "text": "responde_en_espanol: Responde completamente en español",
+          "passed": true,
+          "evidence": "Entire response is in Spanish"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 73.8,
+        "tokens": 18571,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "identifica_canal_whatsapp: Identifica que el canal es WhatsApp y da consejo específico para ese canal",
+          "passed": true,
+          "evidence": "The response explicitly references WhatsApp multiple times with channel-specific advice, e.g. 'conversación de voz en WhatsApp' and 'El objetivo del primer contacto en WhatsApp no es informar — es clasificar y mover a una llamada o conversación de voz.'"
+        },
+        {
+          "text": "da_mensaje_concreto: Incluye un mensaje o frase exacta que el usuario puede enviar ahora mismo",
+          "passed": true,
+          "evidence": "Multiple verbatim messages provided under 'Mensajes / Frases Clave', including 'Mensaje de reactivación #1 (manda esto hoy)' with three ready-to-send options, e.g. 'Oye [nombre], ¿sigues buscando escalar tu negocio o ya lo resolviste?'"
+        },
+        {
+          "text": "no_perseguir: Advierte contra perseguir al cliente o hace el seguimiento estratégico",
+          "passed": true,
+          "evidence": "Explicitly warns: 'Paso 1: NO mandes otro mensaje de solo quería saber si viste la info' and 'Ese mensaje es el más enviado y el menos efectivo del mundo. Lo ignoran automáticamente porque suena a vendedor desesperado.' The strategy is also limited to one reactivation message + one door-close message."
+        },
+        {
+          "text": "responde_en_espanol: Responde completamente en español",
+          "passed": true,
+          "evidence": "The entire response is written in Spanish from start to finish with no English content."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 3,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 64.4,
+        "tokens": 18295,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "identifica_canal_whatsapp: Identifica que el canal es WhatsApp y da consejo específico para ese canal",
+          "passed": true,
+          "evidence": "Explicitly recommends voice notes ('Opción C — Nota de voz (recomendado si ya había algo de conexión)') citing 'La nota de voz tiene una tasa de respuesta mucho más alta que el texto' — this is WhatsApp-specific advice not applicable to other channels."
+        },
+        {
+          "text": "da_mensaje_concreto: Incluye un mensaje o frase exacta que el usuario puede enviar ahora mismo",
+          "passed": true,
+          "evidence": "Multiple verbatim messages provided, e.g. Opción A: 'Oye [nombre], estaba pensando en algo que le pasó a una clienta mía esta semana y me acordé de lo que me contaste. ¿Sigues teniendo el mismo reto que mencionaste?'"
+        },
+        {
+          "text": "no_perseguir: Advierte contra perseguir al cliente o hace el seguimiento estratégico",
+          "passed": true,
+          "evidence": "Explicitly states 'No le mandes un ¿Viste la info que te mandé? ni un Hola, ¿cómo estás?. Eso mata cualquier posibilidad' and frames the approach as re-engagement from a different angle rather than chasing."
+        },
+        {
+          "text": "responde_en_espanol: Responde completamente en español",
+          "passed": true,
+          "evidence": "The entire response is written in Spanish throughout, including all section headers, analysis, and example messages."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "total": 4,
+        "time_seconds": 35.3,
+        "tokens": 14247,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "identifica_canal_whatsapp: Identifica que el canal es WhatsApp y da consejo específico para ese canal",
+          "passed": true,
+          "evidence": "Mentions 'En WhatsApp, la gente no lee paredes de texto' and advises short messages; gives WhatsApp-appropriate message options"
+        },
+        {
+          "text": "da_mensaje_concreto: Incluye un mensaje o frase exacta que el usuario puede enviar ahora mismo",
+          "passed": true,
+          "evidence": "Provides three concrete message options (A, B, C) that can be sent verbatim"
+        },
+        {
+          "text": "no_perseguir: Advierte contra perseguir al cliente o hace el seguimiento estratégico",
+          "passed": false,
+          "evidence": "Provides a multi-touchpoint follow-up sequence (Day 3, Day 6-7, Day 10-12) without warning against chasing. Includes '¿Sigues interesada en platicar?' which reads as chasing. Never explicitly warns against multiple follow-ups."
+        },
+        {
+          "text": "responde_en_espanol: Responde completamente en español",
+          "passed": true,
+          "evidence": "Entire response is in Spanish"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 38.0,
+        "tokens": 14502,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "identifica_canal_whatsapp: Identifica que el canal es WhatsApp y da consejo específico para ese canal",
+          "passed": true,
+          "evidence": "Mentions WhatsApp-specific tactic: 'El seguimiento por audio puede funcionar mejor — los mensajes de voz en WhatsApp se sienten más personales y generan más respuesta que el texto.'"
+        },
+        {
+          "text": "da_mensaje_concreto: Incluye un mensaje o frase exacta que el usuario puede enviar ahora mismo",
+          "passed": true,
+          "evidence": "Provides three verbatim message options (Opción A, B, C) plus a 'cierre de puerta' message, e.g. 'Hola [nombre], ¿cómo estás? Quería compartirte algo que creo que te puede servir...'"
+        },
+        {
+          "text": "no_perseguir: Advierte contra perseguir al cliente o hace el seguimiento estratégico",
+          "passed": true,
+          "evidence": "Explicitly warns: 'No mandes varias veces sin respuesta — dos o tres mensajes bien espaciados es el límite.' Also advises against 'presionar' and includes a graceful door-closing message."
+        },
+        {
+          "text": "responde_en_espanol: Responde completamente en español",
+          "passed": true,
+          "evidence": "The entire response is written in Spanish with no English text."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 3,
+      "result": {
+        "pass_rate": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "total": 4,
+        "time_seconds": 34.1,
+        "tokens": 14357,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "identifica_canal_whatsapp: Identifica que el canal es WhatsApp y da consejo específico para ese canal",
+          "passed": false,
+          "evidence": "The response gives follow-up messaging advice but never addresses WhatsApp-specific tactics such as voice notes, read receipts, WhatsApp status, or any feature unique to the platform. Advice is generic and could apply to email, DMs, or any channel."
+        },
+        {
+          "text": "da_mensaje_concreto: Incluye un mensaje o frase exacta que el usuario puede enviar ahora mismo",
+          "passed": true,
+          "evidence": "Multiple verbatim messages are provided, e.g. 'Hola [nombre], ¿cómo estás? Quería checar si tienes alguna pregunta sobre el programa, a veces hay dudas que no se ven claras de entrada. Estoy aquí si quieres platicarlo 😊'"
+        },
+        {
+          "text": "no_perseguir: Advierte contra perseguir al cliente o hace el seguimiento estratégico",
+          "passed": true,
+          "evidence": "Explicitly states 'No mandar varios mensajes seguidos sin respuesta' and frames follow-up as a single warm re-engagement message. The soft-close step is positioned as giving the client an exit, not as chasing."
+        },
+        {
+          "text": "responde_en_espanol: Responde completamente en español",
+          "passed": true,
+          "evidence": "The entire response is written in Spanish with no English content."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 60.5,
+        "tokens": 17969,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "distingue_objeciones: Separa la objeción de precio de la objeción de 'necesito pensarlo' y trata ambas",
+          "passed": true,
+          "evidence": "Explicitly diagnoses both: 'está muy caro' = value gap; 'lo tengo que pensar' = escape hatch. Provides separate handling for each with specific questions."
+        },
+        {
+          "text": "frases_para_llamada: Provee frases concretas para decir en la llamada en tiempo real",
+          "passed": true,
+          "evidence": "Multiple exact phrases: '¿Qué es específicamente lo que necesitas pensar?', 'si en los próximos 3 meses esto te genera [resultado], ¿cuánto te cuesta NO tenerlo?', '¿Lo hacemos?'"
+        },
+        {
+          "text": "no_descuento_inmediato: No recomienda dar un descuento como primera respuesta",
+          "passed": true,
+          "evidence": "Focuses entirely on ROI reframing before any concession. Never mentions discount. Says 'No bajes el precio' as a guiding rule."
+        },
+        {
+          "text": "incluye_silencio_o_cierre: Menciona el poder del silencio o incluye una pregunta de cierre al final",
+          "passed": true,
+          "evidence": "Explicitly says 'Silencio. No rellenes. Espera la respuesta.' and 'silencio absoluto. El que habla primero, pierde.'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 60.1,
+        "tokens": 18134,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "distingue_objeciones: Separa la objeción de precio de la objeción de 'necesito pensarlo' y trata ambas",
+          "passed": true,
+          "evidence": "Diagnóstico section explicitly identifies two separate signals: 'Está muy caro' (price objection) and 'lo tengo que pensar' (delay objection), stating '\"Lo tengo que pensar\" en una llamada en vivo es la forma educada de decir: no me has dado suficiente razón para decir sí ahora mismo.' Both are addressed throughout the response with specific handling for each."
+        },
+        {
+          "text": "frases_para_llamada: Provee frases concretas para decir en la llamada en tiempo real",
+          "passed": true,
+          "evidence": "Entire section 'Frases Exactas — Úsalas Ahora Mismo' provides verbatim dialogue including: '¿Qué es específicamente lo que necesitas pensar?', '¿Y si el dinero no fuera el tema, lo harías?', '¿Lo hacemos? Te digo cómo es el primer paso.' — all ready to use on the call."
+        },
+        {
+          "text": "no_descuento_inmediato: No recomienda dar un descuento como primera respuesta",
+          "passed": true,
+          "evidence": "Movimiento 1 explicitly states 'No ofrezcas descuento todavía.' The 'Lo Que NO Debes Hacer' section reiterates 'No ofrezcas descuento de entrada — baja el valor percibido sin resolver el problema real.' Discount is only mentioned later as a last resort if the objection is purely financial."
+        },
+        {
+          "text": "incluye_silencio_o_cierre: Menciona el poder del silencio o incluye una pregunta de cierre al final",
+          "passed": true,
+          "evidence": "Multiple mentions of silence: 'Luego — silencio. No llenes ese espacio.' and '(Silencio. Déjalo responder.)' and 'el primero que habla después del cierre, pierde.' Closing questions include '¿Lo hacemos?' and '¿Qué necesitaría pasar para que digas sí hoy?'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 3,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 53.6,
+        "tokens": 17862,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "distingue_objeciones: Separa la objeción de precio de la objeción de 'necesito pensarlo' y trata ambas",
+          "passed": true,
+          "evidence": "'Son dos cosas distintas: el precio y el \"necesito pensar\". Ataca la segunda primero — porque la primera es consecuencia de la segunda.' Both objections are explicitly named, separated, and addressed throughout the response."
+        },
+        {
+          "text": "frases_para_llamada: Provee frases concretas para decir en la llamada en tiempo real",
+          "passed": true,
+          "evidence": "Multiple verbatim phrases are provided under 'Frases Exactas para Decir Ahora Mismo', e.g. '¿Qué es lo que necesitas resolver para que tenga sentido para ti?' and '¿Empezamos?'"
+        },
+        {
+          "text": "no_descuento_inmediato: No recomienda dar un descuento como primera respuesta",
+          "passed": true,
+          "evidence": "'El error típico: bajar el precio... Ninguna de las tres funciona.' and 'No bajes el precio sin que te lo pidan explícitamente' — discounts are explicitly discouraged as a first move."
+        },
+        {
+          "text": "incluye_silencio_o_cierre: Menciona el poder del silencio o incluye una pregunta de cierre al final",
+          "passed": true,
+          "evidence": "'Simple. Con silencio después. No lo llenes.' and 'Recuerda: el silencio después del cierre es tuyo. No lo rompas.' — silence is explicitly emphasized after closing questions."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 34.8,
+        "tokens": 14207,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "distingue_objeciones: Separa la objeción de precio de la objeción de 'necesito pensarlo' y trata ambas",
+          "passed": true,
+          "evidence": "Explicitly separates: 'Hay dos cosas mezcladas en lo que dijo: está caro y lo tengo que pensar. Son distintas.' Handles each with separate branches (3A and 3B)."
+        },
+        {
+          "text": "frases_para_llamada: Provee frases concretas para decir en la llamada en tiempo real",
+          "passed": true,
+          "evidence": "Provides multiple verbatim phrases including the high-leverage 'cuando dices que lo tienes que pensar, ¿es principalmente por el precio, o hay algo más?'"
+        },
+        {
+          "text": "no_descuento_inmediato: No recomienda dar un descuento como primera respuesta",
+          "passed": true,
+          "evidence": "First does value reframing in Step 3A before mentioning payment plans. Payment plan offer is secondary, not the primary move. Explicitly says 'no bajes el precio de golpe'."
+        },
+        {
+          "text": "incluye_silencio_o_cierre: Menciona el poder del silencio o incluye una pregunta de cierre al final",
+          "passed": true,
+          "evidence": "Includes a closing question: '¿Te parece si hablamos el [día concreto] a las [hora]?' to convert vague 'lo pienso' into a concrete commitment."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "total": 4,
+        "time_seconds": 24.8,
+        "tokens": 14149,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "distingue_objeciones: Separa la objeción de precio de la objeción de 'necesito pensarlo' y trata ambas",
+          "passed": true,
+          "evidence": "Opción 1 asks 'cuando dices que lo tienes que pensar, ¿es principalmente por el precio, o hay algo más?' — explicitly separating the delay objection from price. Opción 2 isolates price with 'si el precio no fuera un tema, ¿esto sería exactamente lo que estás buscando?' Both objections are addressed across the options."
+        },
+        {
+          "text": "frases_para_llamada: Provee frases concretas para decir en la llamada en tiempo real",
+          "passed": true,
+          "evidence": "Four concrete dialogue options are provided in blockquotes, e.g. '\"Me alegra que te interese. Cuando dices que lo tienes que pensar, ¿es principalmente por el precio, o hay algo más que te genera duda?\"'"
+        },
+        {
+          "text": "no_descuento_inmediato: No recomienda dar un descuento como primera respuesta",
+          "passed": true,
+          "evidence": "The recommendation section explicitly says 'No entres a justificar el costo de inmediato'. No discount is offered anywhere in the response; the only mention of 'facilidades' is as a downstream possibility after isolating the objection."
+        },
+        {
+          "text": "incluye_silencio_o_cierre: Menciona el poder del silencio o incluye una pregunta de cierre al final",
+          "passed": false,
+          "evidence": "No mention of silence (silencio) after asking a question, and no explicit closing question designed to get a yes/no commitment. The questions are diagnostic/exploratory rather than closing questions. Opción 4 is the closest but still framed as reflection rather than a close."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 3,
+      "result": {
+        "pass_rate": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "total": 4,
+        "time_seconds": 29.2,
+        "tokens": 14279,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "distingue_objeciones: Separa la objeción de precio de la objeción de 'necesito pensarlo' y trata ambas",
+          "passed": true,
+          "evidence": "Opción 1 explicitly separates both: '¿es principalmente por el precio, o hay alguna otra duda que también tienes?' and the 'Siguiente paso' section addresses price AND needing to consult someone separately"
+        },
+        {
+          "text": "frases_para_llamada: Provee frases concretas para decir en la llamada en tiempo real",
+          "passed": true,
+          "evidence": "Three concrete dialogue options provided in quotes: 'Me alegra que te interese...', 'Entiendo perfectamente. Cuéntame, ¿cuánto estabas esperando invertir en esto?', and 'Te entiendo. ¿Puedo preguntarte algo?...'"
+        },
+        {
+          "text": "no_descuento_inmediato: No recomienda dar un descuento como primera respuesta",
+          "passed": true,
+          "evidence": "Explicitly says in 'Qué NO hacer': 'No digas te puedo hacer un descuento de inmediato — pierdes margen y credibilidad'"
+        },
+        {
+          "text": "incluye_silencio_o_cierre: Menciona el poder del silencio o incluye una pregunta de cierre al final",
+          "passed": false,
+          "evidence": "No mention of silence as a technique; the follow-up questions are diagnostic rather than closing questions designed to get a commitment. The suggestion '¿Cuándo sería un buen momento para hablar esta semana?' is a scheduling question, not a true closing question"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 60.1,
+        "tokens": 18287,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "identifica_error_precio_prematuro: Identifica que se mandó el precio antes de crear deseo/valor",
+          "passed": true,
+          "evidence": "Explicitly: 'El precio en el primer mensaje mata el deseo antes de que empiece. El cliente aún no sabe si lo que vendes resuelve su problema.'"
+        },
+        {
+          "text": "identifica_error_info_excesiva: Identifica el error de mandar demasiada información de golpe",
+          "passed": true,
+          "evidence": "Explicitly: 'Enviaste información de todos los servicios sin saber nada sobre él' and 'Propuesta sin diagnóstico — Mandar una propuesta sin diagnóstico es como un médico que te da medicina sin preguntarte qué tienes.'"
+        },
+        {
+          "text": "da_mensaje_recuperacion: Provee un mensaje concreto para enviar ahora y recuperar la conversación",
+          "passed": true,
+          "evidence": "Provides exact recovery message: 'Ey [nombre], se me ocurrió algo mientras hablaba con otro cliente que también tiene [tipo de negocio similar]. Antes de mandarte más info — ¿tienes sitio web ahorita o estás empezando desde cero?'"
+        },
+        {
+          "text": "reescritura_conversacion: Muestra cómo debería haber sido la conversación original o da una estructura mejor",
+          "passed": true,
+          "evidence": "Provides a comparison table (Lo que hiciste vs Lo que deberías hacer) and a complete step-by-step corrected approach with exact messages for each stage"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "with_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 66.5,
+        "tokens": 18397,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "identifica_error_precio_prematuro: Identifica que se mandó el precio antes de crear deseo/valor",
+          "passed": true,
+          "evidence": "Error 1: Precio antes de valor — 'El precio sin valor siempre parece caro' and 'Mencionaste el precio demasiado pronto... antes de saber nada sobre él ni de que él supiera nada sobre ti.'"
+        },
+        {
+          "text": "identifica_error_info_excesiva: Identifica el error de mandar demasiada información de golpe",
+          "passed": true,
+          "evidence": "Error 2: El muro de texto — '3 párrafos explicando todos los servicios con precios = transferir el trabajo de ventas al cliente' and 'los muros de texto generan una respuesta: ok gracias'"
+        },
+        {
+          "text": "da_mensaje_recuperacion: Provee un mensaje concreto para enviar ahora y recuperar la conversación",
+          "passed": true,
+          "evidence": "Two concrete recovery messages provided: Opción A — 'Oye [nombre], me quedé pensando en algo. Antes de que veas la info que te mandé — ¿qué es lo más urgente que necesitas que haga tu web por ti?' and Opción B with portfolio/social proof approach."
+        },
+        {
+          "text": "reescritura_conversacion: Muestra cómo debería haber sido la conversación original o da una estructura mejor",
+          "passed": true,
+          "evidence": "Section 'Estructura de Ejecución — Cómo Debió Ir' shows the full conversation rewritten step-by-step, with example messages for each turn starting from the client's opening message."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "with_skill",
+      "run_number": 3,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 59.0,
+        "tokens": 18199,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "identifica_error_precio_prematuro: Identifica que se mandó el precio antes de crear deseo/valor",
+          "passed": true,
+          "evidence": "Mencionaste el precio ($800) en el segundo mensaje. Antes de saber nada sobre el cliente, antes de que entendiera el valor, antes de que se imaginara teniéndolo. El precio sin contexto siempre parece caro."
+        },
+        {
+          "text": "identifica_error_info_excesiva: Identifica el error de mandar demasiada información de golpe",
+          "passed": true,
+          "evidence": "Enviaste 3 párrafos de golpe. En WhatsApp, las paredes de texto se ven como trabajo. El cliente vio el mensaje, pensó 'esto está largo', y lo dejó para después."
+        },
+        {
+          "text": "da_mensaje_recuperacion: Provee un mensaje concreto para enviar ahora y recuperar la conversación",
+          "passed": true,
+          "evidence": "Provides two specific recovery messages: Opción A: 'Oye, antes de que te mande info genérica — ¿tu negocio ya tiene web o sería algo nuevo?' and Opción B: 'Una pregunta rápida antes de que lo veas — ¿qué es lo principal que quieres que haga la web por tu negocio?'"
+        },
+        {
+          "text": "reescritura_conversacion: Muestra cómo debería haber sido la conversación original o da una estructura mejor",
+          "passed": true,
+          "evidence": "The 'Para la próxima conversación — El flujo correcto' section provides a 4-step corrected conversation structure (1. Entender su situación, 2. Conectar su problema con tu solución, 3. Precio con contexto, 4. Cerrar hacia un siguiente paso concreto) along with the summary table comparing what was done vs. what should be done."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "total": 4,
+        "time_seconds": 37.7,
+        "tokens": 14424,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "identifica_error_precio_prematuro: Identifica que se mandó el precio antes de crear deseo/valor",
+          "passed": true,
+          "evidence": "'Mencionaste el precio demasiado pronto - En el segundo mensaje ya dijiste $800. El cliente aún no entiende el valor de lo que ofreces.'"
+        },
+        {
+          "text": "identifica_error_info_excesiva: Identifica el error de mandar demasiada información de golpe",
+          "passed": true,
+          "evidence": "'Enviaste información en lugar de hacer preguntas' and 'Abrumaste al cliente - Demasiada información de una sola vez genera paralizacion.'"
+        },
+        {
+          "text": "da_mensaje_recuperacion: Provee un mensaje concreto para enviar ahora y recuperar la conversación",
+          "passed": true,
+          "evidence": "Provides 3 recovery message options (A, B, C) with exact text"
+        },
+        {
+          "text": "reescritura_conversacion: Muestra cómo debería haber sido la conversación original o da una estructura mejor",
+          "passed": false,
+          "evidence": "Gives advice about what to do NEXT TIME ('La proxima vez que un cliente diga...') but does not rewrite the original conversation or show a corrected version of the actual exchange that happened"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "without_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 29.2,
+        "tokens": 14417,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "identifica_error_precio_prematuro: Identifica que se mandó el precio antes de crear deseo/valor",
+          "passed": true,
+          "evidence": "Section '2. No hiciste preguntas antes de enviar información' and the final flow section state 'Cliente muestra interés → No mandes precios todavía' and 'El objetivo inicial no es vender, es calificar al cliente y generar confianza antes de hablar de precios.'"
+        },
+        {
+          "text": "identifica_error_info_excesiva: Identifica el error de mandar demasiada información de golpe",
+          "passed": true,
+          "evidence": "Section '1. Bombardeaste con información en lugar de generar conversación' explicitly identifies this: 'El error principal fue mandar 3 párrafos con todos los servicios y precios de golpe. Esto es lo que se conoce como information dump'"
+        },
+        {
+          "text": "da_mensaje_recuperacion: Provee un mensaje concreto para enviar ahora y recuperar la conversación",
+          "passed": true,
+          "evidence": "Provides two concrete recovery messages labeled 'Opción A' and 'Opción B', e.g. 'Hola [nombre], solo pasaba a ver si tuviste oportunidad de revisarlo. ¿Qué tipo de negocio tienes?...'"
+        },
+        {
+          "text": "reescritura_conversacion: Muestra cómo debería haber sido la conversación original o da una estructura mejor",
+          "passed": true,
+          "evidence": "Section 'Para la próxima vez: el flujo correcto' provides a 5-step correct conversation structure showing exactly how the interaction should have gone, from initial interest through qualification to presenting a single option and closing with a next step."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "without_skill",
+      "run_number": 3,
+      "result": {
+        "pass_rate": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "total": 4,
+        "time_seconds": 32.5,
+        "tokens": 14515,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "identifica_error_precio_prematuro: Identifica que se mandó el precio antes de crear deseo/valor",
+          "passed": false,
+          "evidence": "The response mentions sending prices without qualifying the client, but never explicitly frames it as 'sending price before creating desire/value'. The concept of building desire first is absent — it focuses on overwhelming with info and missing questions."
+        },
+        {
+          "text": "identifica_error_info_excesiva: Identifica el error de mandar demasiada información de golpe",
+          "passed": true,
+          "evidence": "'Bombardeaste al cliente con demasiada información de golpe... enviar 3 párrafos con todos tus servicios y precios... Eso abruma y paraliza la decisión.'"
+        },
+        {
+          "text": "da_mensaje_recuperacion: Provee un mensaje concreto para enviar ahora y recuperar la conversación",
+          "passed": true,
+          "evidence": "Provides a specific recovery message: 'Hola [nombre], ¿cómo estás? Solo quería saber si tuviste oportunidad de revisar la info que te mandé...'"
+        },
+        {
+          "text": "reescritura_conversacion: Muestra cómo debería haber sido la conversación original o da una estructura mejor",
+          "passed": true,
+          "evidence": "Section 'Para tus próximas conversaciones, el flujo correcto es:' provides a 5-step corrected conversation structure showing how the original should have gone."
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 61.8667,
+        "stddev": 5.4197,
+        "min": 53.6,
+        "max": 73.8
+      },
+      "tokens": {
+        "mean": 18206.7778,
+        "stddev": 202.0455,
+        "min": 17862,
+        "max": 18571
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.8333,
+        "stddev": 0.1179,
+        "min": 0.75,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 32.8444,
+        "stddev": 4.1229,
+        "min": 24.8,
+        "max": 38.0
+      },
+      "tokens": {
+        "mean": 14344.1111,
+        "stddev": 123.167,
+        "min": 14149,
+        "max": 14515
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.17",
+      "time_seconds": "+29.0",
+      "tokens": "+3863"
+    }
+  },
+  "notes": []
+}

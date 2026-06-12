@@ -1,0 +1,33 @@
+{
+  "eval_id": 2,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "distingue_objeciones: Separa la objeci\u00f3n de precio de la objeci\u00f3n de 'necesito pensarlo' y trata ambas",
+      "passed": true,
+      "evidence": "Explicitly diagnoses both: 'est\u00e1 muy caro' = value gap; 'lo tengo que pensar' = escape hatch. Provides separate handling for each with specific questions."
+    },
+    {
+      "text": "frases_para_llamada: Provee frases concretas para decir en la llamada en tiempo real",
+      "passed": true,
+      "evidence": "Multiple exact phrases: '\u00bfQu\u00e9 es espec\u00edficamente lo que necesitas pensar?', 'si en los pr\u00f3ximos 3 meses esto te genera [resultado], \u00bfcu\u00e1nto te cuesta NO tenerlo?', '\u00bfLo hacemos?'"
+    },
+    {
+      "text": "no_descuento_inmediato: No recomienda dar un descuento como primera respuesta",
+      "passed": true,
+      "evidence": "Focuses entirely on ROI reframing before any concession. Never mentions discount. Says 'No bajes el precio' as a guiding rule."
+    },
+    {
+      "text": "incluye_silencio_o_cierre: Menciona el poder del silencio o incluye una pregunta de cierre al final",
+      "passed": true,
+      "evidence": "Explicitly says 'Silencio. No rellenes. Espera la respuesta.' and 'silencio absoluto. El que habla primero, pierde.'"
+    }
+  ],
+  "pass_rate": 1.0,
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  }
+}

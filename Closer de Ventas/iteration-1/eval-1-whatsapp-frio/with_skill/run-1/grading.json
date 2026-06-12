@@ -1,0 +1,33 @@
+{
+  "eval_id": 1,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "identifica_canal_whatsapp: Identifica que el canal es WhatsApp y da consejo espec\u00edfico para ese canal",
+      "passed": true,
+      "evidence": "Specifically advises sending two separate short messages (not one long one), uses pattern interrupt tactic, explicitly references WhatsApp rhythm and momentum"
+    },
+    {
+      "text": "da_mensaje_concreto: Incluye un mensaje o frase exacta que el usuario puede enviar ahora mismo",
+      "passed": true,
+      "evidence": "Provides two exact verbatim messages to send: 'Oye [nombre], te mand\u00e9 bastante info el otro d\u00eda \u2014 probablemente demasiada de un jal\u00f3n \ud83d\ude05' and 'Cu\u00e9ntame una cosa: \u00bfqu\u00e9 fue lo que te hizo escribirme originalmente?'"
+    },
+    {
+      "text": "no_perseguir: Advierte contra perseguir al cliente o hace el seguimiento estrat\u00e9gico",
+      "passed": true,
+      "evidence": "Explicitly states 'No hagas seguimiento de \u00bflo viste?' and explains 'Eso se ve desesperado y te posiciona mal. Nunca digas solo quer\u00eda saber si tuviste chance de leerlo'"
+    },
+    {
+      "text": "responde_en_espanol: Responde completamente en espa\u00f1ol",
+      "passed": true,
+      "evidence": "Entire response is in Spanish"
+    }
+  ],
+  "pass_rate": 1.0,
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  }
+}

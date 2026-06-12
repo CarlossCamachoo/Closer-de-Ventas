@@ -1,0 +1,33 @@
+{
+  "eval_id": 1,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "identifica_canal_whatsapp: Identifica que el canal es WhatsApp y da consejo específico para ese canal",
+      "passed": true,
+      "evidence": "The response explicitly references WhatsApp multiple times with channel-specific advice, e.g. 'conversación de voz en WhatsApp' and 'El objetivo del primer contacto en WhatsApp no es informar — es clasificar y mover a una llamada o conversación de voz.'"
+    },
+    {
+      "text": "da_mensaje_concreto: Incluye un mensaje o frase exacta que el usuario puede enviar ahora mismo",
+      "passed": true,
+      "evidence": "Multiple verbatim messages provided under 'Mensajes / Frases Clave', including 'Mensaje de reactivación #1 (manda esto hoy)' with three ready-to-send options, e.g. 'Oye [nombre], ¿sigues buscando escalar tu negocio o ya lo resolviste?'"
+    },
+    {
+      "text": "no_perseguir: Advierte contra perseguir al cliente o hace el seguimiento estratégico",
+      "passed": true,
+      "evidence": "Explicitly warns: 'Paso 1: NO mandes otro mensaje de solo quería saber si viste la info' and 'Ese mensaje es el más enviado y el menos efectivo del mundo. Lo ignoran automáticamente porque suena a vendedor desesperado.' The strategy is also limited to one reactivation message + one door-close message."
+    },
+    {
+      "text": "responde_en_espanol: Responde completamente en español",
+      "passed": true,
+      "evidence": "The entire response is written in Spanish from start to finish with no English content."
+    }
+  ],
+  "pass_rate": 1.0,
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  }
+}

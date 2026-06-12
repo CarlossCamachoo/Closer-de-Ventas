@@ -1,0 +1,33 @@
+{
+  "eval_id": 2,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "distingue_objeciones: Separa la objeción de precio de la objeción de 'necesito pensarlo' y trata ambas",
+      "passed": true,
+      "evidence": "Opción 1 explicitly separates both: '¿es principalmente por el precio, o hay alguna otra duda que también tienes?' and the 'Siguiente paso' section addresses price AND needing to consult someone separately"
+    },
+    {
+      "text": "frases_para_llamada: Provee frases concretas para decir en la llamada en tiempo real",
+      "passed": true,
+      "evidence": "Three concrete dialogue options provided in quotes: 'Me alegra que te interese...', 'Entiendo perfectamente. Cuéntame, ¿cuánto estabas esperando invertir en esto?', and 'Te entiendo. ¿Puedo preguntarte algo?...'"
+    },
+    {
+      "text": "no_descuento_inmediato: No recomienda dar un descuento como primera respuesta",
+      "passed": true,
+      "evidence": "Explicitly says in 'Qué NO hacer': 'No digas te puedo hacer un descuento de inmediato — pierdes margen y credibilidad'"
+    },
+    {
+      "text": "incluye_silencio_o_cierre: Menciona el poder del silencio o incluye una pregunta de cierre al final",
+      "passed": false,
+      "evidence": "No mention of silence as a technique; the follow-up questions are diagnostic rather than closing questions designed to get a commitment. The suggestion '¿Cuándo sería un buen momento para hablar esta semana?' is a scheduling question, not a true closing question"
+    }
+  ],
+  "pass_rate": 0.75,
+  "summary": {
+    "pass_rate": 0.75,
+    "passed": 3,
+    "failed": 1,
+    "total": 4
+  }
+}

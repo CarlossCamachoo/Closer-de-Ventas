@@ -1,0 +1,33 @@
+{
+  "eval_id": 3,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "identifica_error_precio_prematuro: Identifica que se mand\u00f3 el precio antes de crear deseo/valor",
+      "passed": true,
+      "evidence": "'Mencionaste el precio demasiado pronto - En el segundo mensaje ya dijiste $800. El cliente a\u00fan no entiende el valor de lo que ofreces.'"
+    },
+    {
+      "text": "identifica_error_info_excesiva: Identifica el error de mandar demasiada informaci\u00f3n de golpe",
+      "passed": true,
+      "evidence": "'Enviaste informaci\u00f3n en lugar de hacer preguntas' and 'Abrumaste al cliente - Demasiada informaci\u00f3n de una sola vez genera paralizacion.'"
+    },
+    {
+      "text": "da_mensaje_recuperacion: Provee un mensaje concreto para enviar ahora y recuperar la conversaci\u00f3n",
+      "passed": true,
+      "evidence": "Provides 3 recovery message options (A, B, C) with exact text"
+    },
+    {
+      "text": "reescritura_conversacion: Muestra c\u00f3mo deber\u00eda haber sido la conversaci\u00f3n original o da una estructura mejor",
+      "passed": false,
+      "evidence": "Gives advice about what to do NEXT TIME ('La proxima vez que un cliente diga...') but does not rewrite the original conversation or show a corrected version of the actual exchange that happened"
+    }
+  ],
+  "pass_rate": 0.75,
+  "summary": {
+    "pass_rate": 0.75,
+    "passed": 3,
+    "failed": 1,
+    "total": 4
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 1,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "identifica_canal_whatsapp: Identifica que el canal es WhatsApp y da consejo específico para ese canal",
+      "passed": true,
+      "evidence": "Explicitly recommends voice notes ('Opción C — Nota de voz (recomendado si ya había algo de conexión)') citing 'La nota de voz tiene una tasa de respuesta mucho más alta que el texto' — this is WhatsApp-specific advice not applicable to other channels."
+    },
+    {
+      "text": "da_mensaje_concreto: Incluye un mensaje o frase exacta que el usuario puede enviar ahora mismo",
+      "passed": true,
+      "evidence": "Multiple verbatim messages provided, e.g. Opción A: 'Oye [nombre], estaba pensando en algo que le pasó a una clienta mía esta semana y me acordé de lo que me contaste. ¿Sigues teniendo el mismo reto que mencionaste?'"
+    },
+    {
+      "text": "no_perseguir: Advierte contra perseguir al cliente o hace el seguimiento estratégico",
+      "passed": true,
+      "evidence": "Explicitly states 'No le mandes un ¿Viste la info que te mandé? ni un Hola, ¿cómo estás?. Eso mata cualquier posibilidad' and frames the approach as re-engagement from a different angle rather than chasing."
+    },
+    {
+      "text": "responde_en_espanol: Responde completamente en español",
+      "passed": true,
+      "evidence": "The entire response is written in Spanish throughout, including all section headers, analysis, and example messages."
+    }
+  ],
+  "pass_rate": 1.0,
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  }
+}

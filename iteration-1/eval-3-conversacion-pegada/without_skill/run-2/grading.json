@@ -1,0 +1,33 @@
+{
+  "eval_id": 3,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "identifica_error_precio_prematuro: Identifica que se mandó el precio antes de crear deseo/valor",
+      "passed": true,
+      "evidence": "Section '2. No hiciste preguntas antes de enviar información' and the final flow section state 'Cliente muestra interés → No mandes precios todavía' and 'El objetivo inicial no es vender, es calificar al cliente y generar confianza antes de hablar de precios.'"
+    },
+    {
+      "text": "identifica_error_info_excesiva: Identifica el error de mandar demasiada información de golpe",
+      "passed": true,
+      "evidence": "Section '1. Bombardeaste con información en lugar de generar conversación' explicitly identifies this: 'El error principal fue mandar 3 párrafos con todos los servicios y precios de golpe. Esto es lo que se conoce como information dump'"
+    },
+    {
+      "text": "da_mensaje_recuperacion: Provee un mensaje concreto para enviar ahora y recuperar la conversación",
+      "passed": true,
+      "evidence": "Provides two concrete recovery messages labeled 'Opción A' and 'Opción B', e.g. 'Hola [nombre], solo pasaba a ver si tuviste oportunidad de revisarlo. ¿Qué tipo de negocio tienes?...'"
+    },
+    {
+      "text": "reescritura_conversacion: Muestra cómo debería haber sido la conversación original o da una estructura mejor",
+      "passed": true,
+      "evidence": "Section 'Para la próxima vez: el flujo correcto' provides a 5-step correct conversation structure showing exactly how the interaction should have gone, from initial interest through qualification to presenting a single option and closing with a next step."
+    }
+  ],
+  "pass_rate": 1.0,
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 1,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "identifica_canal_whatsapp: Identifica que el canal es WhatsApp y da consejo espec\u00edfico para ese canal",
+      "passed": true,
+      "evidence": "Mentions 'En WhatsApp, la gente no lee paredes de texto' and advises short messages; gives WhatsApp-appropriate message options"
+    },
+    {
+      "text": "da_mensaje_concreto: Incluye un mensaje o frase exacta que el usuario puede enviar ahora mismo",
+      "passed": true,
+      "evidence": "Provides three concrete message options (A, B, C) that can be sent verbatim"
+    },
+    {
+      "text": "no_perseguir: Advierte contra perseguir al cliente o hace el seguimiento estrat\u00e9gico",
+      "passed": false,
+      "evidence": "Provides a multi-touchpoint follow-up sequence (Day 3, Day 6-7, Day 10-12) without warning against chasing. Includes '\u00bfSigues interesada en platicar?' which reads as chasing. Never explicitly warns against multiple follow-ups."
+    },
+    {
+      "text": "responde_en_espanol: Responde completamente en espa\u00f1ol",
+      "passed": true,
+      "evidence": "Entire response is in Spanish"
+    }
+  ],
+  "pass_rate": 0.75,
+  "summary": {
+    "pass_rate": 0.75,
+    "passed": 3,
+    "failed": 1,
+    "total": 4
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "eval_id": 3,
+  "eval_name": "analisis-conversacion-whatsapp",
+  "prompt": "Analiza esta conversación de WhatsApp y dime qué hice mal y cómo recuperar al cliente",
+  "assertions": []
+}

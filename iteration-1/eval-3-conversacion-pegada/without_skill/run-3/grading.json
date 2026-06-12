@@ -1,0 +1,33 @@
+{
+  "eval_id": 3,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "identifica_error_precio_prematuro: Identifica que se mandó el precio antes de crear deseo/valor",
+      "passed": false,
+      "evidence": "The response mentions sending prices without qualifying the client, but never explicitly frames it as 'sending price before creating desire/value'. The concept of building desire first is absent — it focuses on overwhelming with info and missing questions."
+    },
+    {
+      "text": "identifica_error_info_excesiva: Identifica el error de mandar demasiada información de golpe",
+      "passed": true,
+      "evidence": "'Bombardeaste al cliente con demasiada información de golpe... enviar 3 párrafos con todos tus servicios y precios... Eso abruma y paraliza la decisión.'"
+    },
+    {
+      "text": "da_mensaje_recuperacion: Provee un mensaje concreto para enviar ahora y recuperar la conversación",
+      "passed": true,
+      "evidence": "Provides a specific recovery message: 'Hola [nombre], ¿cómo estás? Solo quería saber si tuviste oportunidad de revisar la info que te mandé...'"
+    },
+    {
+      "text": "reescritura_conversacion: Muestra cómo debería haber sido la conversación original o da una estructura mejor",
+      "passed": true,
+      "evidence": "Section 'Para tus próximas conversaciones, el flujo correcto es:' provides a 5-step corrected conversation structure showing how the original should have gone."
+    }
+  ],
+  "pass_rate": 0.75,
+  "summary": {
+    "pass_rate": 0.75,
+    "passed": 3,
+    "failed": 1,
+    "total": 4
+  }
+}

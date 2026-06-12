@@ -1,0 +1,33 @@
+{
+  "eval_id": 1,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "identifica_canal_whatsapp: Identifica que el canal es WhatsApp y da consejo específico para ese canal",
+      "passed": false,
+      "evidence": "The response gives follow-up messaging advice but never addresses WhatsApp-specific tactics such as voice notes, read receipts, WhatsApp status, or any feature unique to the platform. Advice is generic and could apply to email, DMs, or any channel."
+    },
+    {
+      "text": "da_mensaje_concreto: Incluye un mensaje o frase exacta que el usuario puede enviar ahora mismo",
+      "passed": true,
+      "evidence": "Multiple verbatim messages are provided, e.g. 'Hola [nombre], ¿cómo estás? Quería checar si tienes alguna pregunta sobre el programa, a veces hay dudas que no se ven claras de entrada. Estoy aquí si quieres platicarlo 😊'"
+    },
+    {
+      "text": "no_perseguir: Advierte contra perseguir al cliente o hace el seguimiento estratégico",
+      "passed": true,
+      "evidence": "Explicitly states 'No mandar varios mensajes seguidos sin respuesta' and frames follow-up as a single warm re-engagement message. The soft-close step is positioned as giving the client an exit, not as chasing."
+    },
+    {
+      "text": "responde_en_espanol: Responde completamente en español",
+      "passed": true,
+      "evidence": "The entire response is written in Spanish with no English content."
+    }
+  ],
+  "pass_rate": 0.75,
+  "summary": {
+    "pass_rate": 0.75,
+    "passed": 3,
+    "failed": 1,
+    "total": 4
+  }
+}

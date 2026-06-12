@@ -1,0 +1,33 @@
+{
+  "eval_id": 3,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "identifica_error_precio_prematuro: Identifica que se mandó el precio antes de crear deseo/valor",
+      "passed": true,
+      "evidence": "Mencionaste el precio ($800) en el segundo mensaje. Antes de saber nada sobre el cliente, antes de que entendiera el valor, antes de que se imaginara teniéndolo. El precio sin contexto siempre parece caro."
+    },
+    {
+      "text": "identifica_error_info_excesiva: Identifica el error de mandar demasiada información de golpe",
+      "passed": true,
+      "evidence": "Enviaste 3 párrafos de golpe. En WhatsApp, las paredes de texto se ven como trabajo. El cliente vio el mensaje, pensó 'esto está largo', y lo dejó para después."
+    },
+    {
+      "text": "da_mensaje_recuperacion: Provee un mensaje concreto para enviar ahora y recuperar la conversación",
+      "passed": true,
+      "evidence": "Provides two specific recovery messages: Opción A: 'Oye, antes de que te mande info genérica — ¿tu negocio ya tiene web o sería algo nuevo?' and Opción B: 'Una pregunta rápida antes de que lo veas — ¿qué es lo principal que quieres que haga la web por tu negocio?'"
+    },
+    {
+      "text": "reescritura_conversacion: Muestra cómo debería haber sido la conversación original o da una estructura mejor",
+      "passed": true,
+      "evidence": "The 'Para la próxima conversación — El flujo correcto' section provides a 4-step corrected conversation structure (1. Entender su situación, 2. Conectar su problema con tu solución, 3. Precio con contexto, 4. Cerrar hacia un siguiente paso concreto) along with the summary table comparing what was done vs. what should be done."
+    }
+  ],
+  "pass_rate": 1.0,
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  }
+}

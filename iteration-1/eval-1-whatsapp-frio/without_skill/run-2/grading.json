@@ -1,0 +1,33 @@
+{
+  "eval_id": 1,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "identifica_canal_whatsapp: Identifica que el canal es WhatsApp y da consejo específico para ese canal",
+      "passed": true,
+      "evidence": "Mentions WhatsApp-specific tactic: 'El seguimiento por audio puede funcionar mejor — los mensajes de voz en WhatsApp se sienten más personales y generan más respuesta que el texto.'"
+    },
+    {
+      "text": "da_mensaje_concreto: Incluye un mensaje o frase exacta que el usuario puede enviar ahora mismo",
+      "passed": true,
+      "evidence": "Provides three verbatim message options (Opción A, B, C) plus a 'cierre de puerta' message, e.g. 'Hola [nombre], ¿cómo estás? Quería compartirte algo que creo que te puede servir...'"
+    },
+    {
+      "text": "no_perseguir: Advierte contra perseguir al cliente o hace el seguimiento estratégico",
+      "passed": true,
+      "evidence": "Explicitly warns: 'No mandes varias veces sin respuesta — dos o tres mensajes bien espaciados es el límite.' Also advises against 'presionar' and includes a graceful door-closing message."
+    },
+    {
+      "text": "responde_en_espanol: Responde completamente en español",
+      "passed": true,
+      "evidence": "The entire response is written in Spanish with no English text."
+    }
+  ],
+  "pass_rate": 1.0,
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  }
+}

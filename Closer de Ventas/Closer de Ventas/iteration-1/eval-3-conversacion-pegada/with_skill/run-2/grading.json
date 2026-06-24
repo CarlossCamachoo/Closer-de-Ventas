@@ -1,0 +1,33 @@
+{
+  "eval_id": 3,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "identifica_error_precio_prematuro: Identifica que se mandó el precio antes de crear deseo/valor",
+      "passed": true,
+      "evidence": "Error 1: Precio antes de valor — 'El precio sin valor siempre parece caro' and 'Mencionaste el precio demasiado pronto... antes de saber nada sobre él ni de que él supiera nada sobre ti.'"
+    },
+    {
+      "text": "identifica_error_info_excesiva: Identifica el error de mandar demasiada información de golpe",
+      "passed": true,
+      "evidence": "Error 2: El muro de texto — '3 párrafos explicando todos los servicios con precios = transferir el trabajo de ventas al cliente' and 'los muros de texto generan una respuesta: ok gracias'"
+    },
+    {
+      "text": "da_mensaje_recuperacion: Provee un mensaje concreto para enviar ahora y recuperar la conversación",
+      "passed": true,
+      "evidence": "Two concrete recovery messages provided: Opción A — 'Oye [nombre], me quedé pensando en algo. Antes de que veas la info que te mandé — ¿qué es lo más urgente que necesitas que haga tu web por ti?' and Opción B with portfolio/social proof approach."
+    },
+    {
+      "text": "reescritura_conversacion: Muestra cómo debería haber sido la conversación original o da una estructura mejor",
+      "passed": true,
+      "evidence": "Section 'Estructura de Ejecución — Cómo Debió Ir' shows the full conversation rewritten step-by-step, with example messages for each turn starting from the client's opening message."
+    }
+  ],
+  "pass_rate": 1.0,
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  }
+}

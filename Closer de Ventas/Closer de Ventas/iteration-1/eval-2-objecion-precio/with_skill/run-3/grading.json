@@ -1,0 +1,33 @@
+{
+  "eval_id": 2,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "distingue_objeciones: Separa la objeción de precio de la objeción de 'necesito pensarlo' y trata ambas",
+      "passed": true,
+      "evidence": "'Son dos cosas distintas: el precio y el \"necesito pensar\". Ataca la segunda primero — porque la primera es consecuencia de la segunda.' Both objections are explicitly named, separated, and addressed throughout the response."
+    },
+    {
+      "text": "frases_para_llamada: Provee frases concretas para decir en la llamada en tiempo real",
+      "passed": true,
+      "evidence": "Multiple verbatim phrases are provided under 'Frases Exactas para Decir Ahora Mismo', e.g. '¿Qué es lo que necesitas resolver para que tenga sentido para ti?' and '¿Empezamos?'"
+    },
+    {
+      "text": "no_descuento_inmediato: No recomienda dar un descuento como primera respuesta",
+      "passed": true,
+      "evidence": "'El error típico: bajar el precio... Ninguna de las tres funciona.' and 'No bajes el precio sin que te lo pidan explícitamente' — discounts are explicitly discouraged as a first move."
+    },
+    {
+      "text": "incluye_silencio_o_cierre: Menciona el poder del silencio o incluye una pregunta de cierre al final",
+      "passed": true,
+      "evidence": "'Simple. Con silencio después. No lo llenes.' and 'Recuerda: el silencio después del cierre es tuyo. No lo rompas.' — silence is explicitly emphasized after closing questions."
+    }
+  ],
+  "pass_rate": 1.0,
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 3,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "identifica_error_precio_prematuro: Identifica que se mand\u00f3 el precio antes de crear deseo/valor",
+      "passed": true,
+      "evidence": "Explicitly: 'El precio en el primer mensaje mata el deseo antes de que empiece. El cliente a\u00fan no sabe si lo que vendes resuelve su problema.'"
+    },
+    {
+      "text": "identifica_error_info_excesiva: Identifica el error de mandar demasiada informaci\u00f3n de golpe",
+      "passed": true,
+      "evidence": "Explicitly: 'Enviaste informaci\u00f3n de todos los servicios sin saber nada sobre \u00e9l' and 'Propuesta sin diagn\u00f3stico \u2014 Mandar una propuesta sin diagn\u00f3stico es como un m\u00e9dico que te da medicina sin preguntarte qu\u00e9 tienes.'"
+    },
+    {
+      "text": "da_mensaje_recuperacion: Provee un mensaje concreto para enviar ahora y recuperar la conversaci\u00f3n",
+      "passed": true,
+      "evidence": "Provides exact recovery message: 'Ey [nombre], se me ocurri\u00f3 algo mientras hablaba con otro cliente que tambi\u00e9n tiene [tipo de negocio similar]. Antes de mandarte m\u00e1s info \u2014 \u00bftienes sitio web ahorita o est\u00e1s empezando desde cero?'"
+    },
+    {
+      "text": "reescritura_conversacion: Muestra c\u00f3mo deber\u00eda haber sido la conversaci\u00f3n original o da una estructura mejor",
+      "passed": true,
+      "evidence": "Provides a comparison table (Lo que hiciste vs Lo que deber\u00edas hacer) and a complete step-by-step corrected approach with exact messages for each stage"
+    }
+  ],
+  "pass_rate": 1.0,
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  }
+}

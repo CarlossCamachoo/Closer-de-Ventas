@@ -1,2 +1,9 @@
 .DS_Store
 **/.DS_Store
+**/grading.json
+**/timing.json
+**/response.md
+**/response_run2.md
+**/eval_metadata.json
+**/benchmark.json
+**/benchmark.md

@@ -1,0 +1,98 @@
+{
+  "skill_name": "closer-ventas",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Vendo un programa de coaching de negocios a $1,500 USD. Una cliente me escribió por WhatsApp hace 3 días preguntando info, le mandé todo pero ya no respondió. ¿Qué hago?",
+      "expected_output": "Diagnóstico de por qué se fue fría, mensaje de re-enganche específico para WhatsApp que no sea perseguidor, y técnica de cierre adaptada a la situación.",
+      "assertions": [
+        {
+          "name": "identifica_canal_whatsapp",
+          "description": "Identifica que el canal es WhatsApp y da consejo específico para ese canal (no genérico)",
+          "type": "llm_judge",
+          "criteria": "The response specifically addresses WhatsApp communication tactics, not generic sales advice"
+        },
+        {
+          "name": "da_mensaje_concreto",
+          "description": "Incluye un mensaje o frase exacta que el usuario puede enviar ahora mismo",
+          "type": "llm_judge",
+          "criteria": "The response contains at least one specific message the user can send verbatim, not just general advice"
+        },
+        {
+          "name": "no_perseguir",
+          "description": "Advierte contra perseguir al cliente o hace el seguimiento estratégico",
+          "type": "llm_judge",
+          "criteria": "The response avoids telling the user to just follow up multiple times; it either explains re-engagement strategy or explicitly mentions not chasing"
+        },
+        {
+          "name": "responde_en_espanol",
+          "description": "Responde completamente en español",
+          "type": "llm_judge",
+          "criteria": "The entire response is in Spanish"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Estoy en una llamada y el cliente acaba de decir 'sí me interesa pero está muy caro, lo tengo que pensar'. ¿Qué le digo ahora mismo?",
+      "expected_output": "Respuesta inmediata para manejar la objeción de precio en tiempo real durante la llamada. Frases exactas para explorar la objeción real, reencuadrar el valor, y avanzar hacia el cierre sin bajar el precio.",
+      "assertions": [
+        {
+          "name": "distingue_objeciones",
+          "description": "Separa la objeción de precio de la objeción de 'necesito pensarlo' y trata ambas",
+          "type": "llm_judge",
+          "criteria": "The response recognizes these are two separate objections (price and delay) and addresses both"
+        },
+        {
+          "name": "frases_para_llamada",
+          "description": "Provee frases concretas para decir en la llamada en tiempo real",
+          "type": "llm_judge",
+          "criteria": "The response includes actual dialogue the user can say on the call right now, not just strategy"
+        },
+        {
+          "name": "no_descuento_inmediato",
+          "description": "No recomienda dar un descuento como primera respuesta",
+          "type": "llm_judge",
+          "criteria": "The response does not recommend immediately offering a discount as the primary objection-handling move"
+        },
+        {
+          "name": "incluye_silencio_o_cierre",
+          "description": "Menciona el poder del silencio o incluye una pregunta de cierre al final",
+          "type": "llm_judge",
+          "criteria": "The response either mentions using silence after asking a closing question, or includes a specific closing question to end the call sequence"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Aquí está mi conversación de WhatsApp con un cliente interesado en mi servicio de diseño web ($800 USD):\n\nCliente: Hola, vi tu publicación, me interesa el diseño web\nYo: Hola! Claro, tenemos varios paquetes desde $800. ¿Te mando la info?\nCliente: Sí por favor\nYo: [Manda 3 párrafos explicando todos los servicios con precios]\nCliente: Ok gracias, lo veo\n[Han pasado 2 días sin respuesta]\n\n¿Qué hice mal y qué hago ahora?",
+      "expected_output": "Diagnóstico claro de los errores cometidos (mandar precio antes de crear deseo, demasiada info de golpe), reescritura de cómo debería haber sido la conversación, y mensaje de recuperación para enviar ahora.",
+      "assertions": [
+        {
+          "name": "identifica_error_precio_prematuro",
+          "description": "Identifica que se mandó el precio antes de crear deseo/valor",
+          "type": "llm_judge",
+          "criteria": "The response explicitly identifies that sending the price upfront (before establishing desire or asking qualifying questions) was a mistake"
+        },
+        {
+          "name": "identifica_error_info_excesiva",
+          "description": "Identifica el error de mandar demasiada información de golpe",
+          "type": "llm_judge",
+          "criteria": "The response identifies that sending too much information at once was a mistake that overwhelmed the prospect"
+        },
+        {
+          "name": "da_mensaje_recuperacion",
+          "description": "Provee un mensaje concreto para enviar ahora y recuperar la conversación",
+          "type": "llm_judge",
+          "criteria": "The response includes a specific recovery message the user can send right now to re-engage the prospect"
+        },
+        {
+          "name": "reescritura_conversacion",
+          "description": "Muestra cómo debería haber sido la conversación original o da una estructura mejor",
+          "type": "llm_judge",
+          "criteria": "The response shows how the conversation should have gone, or at minimum explains the correct structure for the first contact"
+        }
+      ]
+    }
+  ]
+}
